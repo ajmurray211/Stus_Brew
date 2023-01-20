@@ -1,7 +1,14 @@
+import Scroller from './Scroller'
+
 const Home = () => {
-    return ( 
-        <h1>Welcome to stu's brew</h1>
-     );
+
+
+    return (
+        <div>
+            <Scroller/>
+            <footer></footer>
+        </div>
+    );
 }
- 
+
 export default Home;

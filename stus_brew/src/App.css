@@ -3,19 +3,38 @@
 }
 
 .hat-logo {
-  height: 25vh;
+  height: 15vh;
+  /* mix-blend-mode: color-burn; */
 }
 
-nav{
+navbar{
+  /* background-color:red; */
+  background-color:rgb(252,212,127);
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* justify-content: space-around; */
-  /* background-color: rgb(12, 100, 253); */
+  justify-content: space-between;
+
 }
 
-.link-container{
+nav{
+  width: 40vw;
+  margin-right: 10vw;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.link{
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  font-weight: 600;
+  font-size:xx-large;
+}
+
+.carousel-item{
+  height: 50vh;
+  contain: content;
 }
