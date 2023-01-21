@@ -2,7 +2,7 @@
   "name": "stus_brew",
   "version": "0.1.0",
   "homepage": "https://ajmurray211/react-gh-pages/Stus_brew",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,6 +11,7 @@
     "dotenv": "^16.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router": "^6.7.0",
     "react-router-dom": "^6.7.0",
     "react-scripts": "5.0.1",
     "reactstrap": "^9.1.5",

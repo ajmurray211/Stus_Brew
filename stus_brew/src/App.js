@@ -2,14 +2,16 @@ import './App.css';
 import Home from './components/Home';
 import About from './components/About/About';
 import { Link, Route, Routes } from 'react-router-dom';
-import logo from './Assets/hat-logo.png';
+// import logo from '../Assets/hat-logo.png';
 
 function App() {
+  const logo = process.env.PUBLIC_URL + '/assets/hat-logo.png'
+
   return (
     <div className="App">
       <navbar>
         <section className='logo'>
-          {/* <Link to="/"><img className="hat-logo" alt='Cut all logo' src={logo} /></Link> */}
+          <Link to="/"><img className="hat-logo" alt='Cut all logo' src={logo} /></Link>
         </section>
         <nav>
 

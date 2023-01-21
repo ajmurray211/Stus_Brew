@@ -1,7 +1,8 @@
 import './about.css'
-import stu from './stu.png'
+// import stu from '.../public'
 
 const About = (props) => {
+    const stu = process.env.PUBLIC_URL + '/assets/stu.png'
     return (
         <div>
             <h1>Information about the Stu that loves his brew</h1>
