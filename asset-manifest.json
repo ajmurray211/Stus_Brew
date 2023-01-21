@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Stus_brew/static/css/main.be3e506f.css",
-    "main.js": "/Stus_brew/static/js/main.9cda6c05.js",
-    "static/js/787.67ea8a59.chunk.js": "/Stus_brew/static/js/787.67ea8a59.chunk.js",
-    "index.html": "/Stus_brew/index.html",
-    "main.be3e506f.css.map": "/Stus_brew/static/css/main.be3e506f.css.map",
-    "main.9cda6c05.js.map": "/Stus_brew/static/js/main.9cda6c05.js.map",
-    "787.67ea8a59.chunk.js.map": "/Stus_brew/static/js/787.67ea8a59.chunk.js.map"
+    "main.css": "/Stus_Brew/static/css/main.be3e506f.css",
+    "main.js": "/Stus_Brew/static/js/main.5a4f45ef.js",
+    "static/js/787.67ea8a59.chunk.js": "/Stus_Brew/static/js/787.67ea8a59.chunk.js",
+    "index.html": "/Stus_Brew/index.html",
+    "main.be3e506f.css.map": "/Stus_Brew/static/css/main.be3e506f.css.map",
+    "main.5a4f45ef.js.map": "/Stus_Brew/static/js/main.5a4f45ef.js.map",
+    "787.67ea8a59.chunk.js.map": "/Stus_Brew/static/js/787.67ea8a59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be3e506f.css",
-    "static/js/main.9cda6c05.js"
+    "static/js/main.5a4f45ef.js"
   ]
 }
