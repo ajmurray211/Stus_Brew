@@ -5,7 +5,8 @@ const Home = () => {
 
     return (
         <div>
-            <Scroller/>
+            <h1>This is the home page</h1>
+            {/* <Scroller/> */}
             <footer></footer>
         </div>
     );

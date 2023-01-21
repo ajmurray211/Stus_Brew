@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <navbar>
         <section className='logo'>
-          <Link to="/"><img className="hat-logo" alt='Cut all logo' src={logo} /></Link>
+          {/* <Link to="/"><img className="hat-logo" alt='Cut all logo' src={logo} /></Link> */}
         </section>
         <nav>
 
