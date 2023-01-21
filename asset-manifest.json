@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-gh-pages/Stus_brew/static/css/main.be3e506f.css",
-    "main.js": "/react-gh-pages/Stus_brew/static/js/main.b81319cc.js",
+    "main.js": "/react-gh-pages/Stus_brew/static/js/main.54294513.js",
     "static/js/787.67ea8a59.chunk.js": "/react-gh-pages/Stus_brew/static/js/787.67ea8a59.chunk.js",
     "static/media/croissants.png": "/react-gh-pages/Stus_brew/static/media/croissants.d695416618cc1cb02630.png",
     "static/media/dough.png": "/react-gh-pages/Stus_brew/static/media/dough.82082c8fdd9b36c37540.png",
@@ -10,11 +10,11 @@
     "static/media/hat-logo.png": "/react-gh-pages/Stus_brew/static/media/hat-logo.e4c70f3126cc6ed43161.png",
     "index.html": "/react-gh-pages/Stus_brew/index.html",
     "main.be3e506f.css.map": "/react-gh-pages/Stus_brew/static/css/main.be3e506f.css.map",
-    "main.b81319cc.js.map": "/react-gh-pages/Stus_brew/static/js/main.b81319cc.js.map",
+    "main.54294513.js.map": "/react-gh-pages/Stus_brew/static/js/main.54294513.js.map",
     "787.67ea8a59.chunk.js.map": "/react-gh-pages/Stus_brew/static/js/787.67ea8a59.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be3e506f.css",
-    "static/js/main.b81319cc.js"
+    "static/js/main.54294513.js"
   ]
 }
