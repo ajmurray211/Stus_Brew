@@ -1,6 +1,6 @@
-import eggsFlour from '../Assets/eggs-flour.png'
-import dough from '../Assets/dough.png'
-import croissants from '../Assets/croissants.png'
+// import eggsFlour from '.../Assets/eggs-flour.png'
+// import dough from '../Assets/dough.png'
+// import croissants from '../Assets/croissants.png'
 import React, { useState } from 'react';
 import {
     Carousel,
@@ -9,6 +9,10 @@ import {
     CarouselIndicators,
     CarouselCaption,
 } from 'reactstrap';
+const eggsFlour = process.env.PUBLIC_URL + '/assets/eggs-flour.png'
+const dough = process.env.PUBLIC_URL + '/assets/dough.png'
+const croissants = process.env.PUBLIC_URL + '/assets/croissants.png'
+
 
 const items = [
     {
