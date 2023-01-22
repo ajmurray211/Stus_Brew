@@ -14,7 +14,7 @@ const About = (props) => {
                 cakes, to cookies, to breads which are all thoughtfully made with family-owned recipes. Each of
                 those items pair perfectly with a cup of Stu’s brewed coffee.
             </p>
-            {/* <img src={stu} alt='black and grey picture of stu' /> */}
+            <img src={stu} alt='black and grey picture of stu' />
         </div >
     );
 }
