@@ -4,47 +4,21 @@ import {
     CarouselItem,
     CarouselControl,
     CarouselIndicators,
-    CarouselCaption,
 } from 'reactstrap';
-const eggsFlour = process.env.PUBLIC_URL + '/assets/eggs-flour.png'
-const dough = process.env.PUBLIC_URL + '/assets/dough.png'
-const croissants = process.env.PUBLIC_URL + '/assets/croissants.png'
 
-
-const items = [
-    {
-        src: eggsFlour,
-        altText: 'Slide 1',
-        caption: 'Slide 1',
-        key: 1,
-    },
-    {
-        src: dough,
-        altText: 'Slide 2',
-        caption: 'Slide 2',
-        key: 2,
-    },
-    {
-        src: croissants,
-        altText: 'Slide 3',
-        caption: 'Slide 3',
-        key: 3,
-    },
-];
-
-function Scroller(args) {
+function Scroller(args, props) {
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
     const next = () => {
         if (animating) return;
-        const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+        const nextIndex = activeIndex === props.items.length - 1 ? 0 : activeIndex + 1;
         setActiveIndex(nextIndex);
     };
 
     const previous = () => {
         if (animating) return;
-        const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+        const nextIndex = activeIndex === 0 ? props.items.length - 1 : activeIndex - 1;
         setActiveIndex(nextIndex);
     };
 
@@ -53,7 +27,7 @@ function Scroller(args) {
         setActiveIndex(newIndex);
     };
 
-    const slides = items.map((item) => {
+    const slides = props.items.map((item) => {
         return (
             <CarouselItem
                 onExiting={() => setAnimating(true)}
@@ -61,10 +35,6 @@ function Scroller(args) {
                 key={item.src}
             >
                 <img src={item.src} alt={item.altText} />
-                <CarouselCaption
-                    captionText={item.caption}
-                    captionHeader={item.caption}
-                />
             </CarouselItem>
         );
     });
@@ -77,7 +47,7 @@ function Scroller(args) {
             {...args}
         >
             <CarouselIndicators
-                items={items}
+                items={props.items}
                 activeIndex={activeIndex}
                 onClickHandler={goToIndex}
             />

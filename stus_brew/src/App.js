@@ -14,20 +14,23 @@ function App() {
           <Link to="/"><img className="hat-logo" alt='Cut all logo' src={logo} /></Link>
         </section>
         <nav>
-
           <Link className='link' to='/'>Home</Link>
           <Link className='link' to='/about'>About</Link>
+          {/* <Link className='link' to='/products'>Products</Link> */}
         </nav>
       </navbar>
 
       <div>
         <Routes>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/about' element={<About
-            
-          />}></Route>
+          <Route path='/about' element={<About/>}></Route>
+          {/* <Route path='/products' element={<Products/>}></Route> */}
         </Routes>
       </div>
+
+      <footer>
+        this is a footer 
+      </footer>
     </div>
   );
 }
