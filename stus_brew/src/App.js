@@ -1,36 +1,31 @@
 import './App.css';
-import Home from './home/Home';
+import Home from './components/home/Home.js';
 import About from './components/About/About';
-import { Link, Route, Routes } from 'react-router-dom';
-// import logo from '../Assets/hat-logo.png';
+import { Route, Routes } from 'react-router-dom';
+import Footer from './components/Footer.js';
+import MerchPage from './components/merch/MerchPage';
+import HamburgerNav from './components/navbars/HamburgerNav';
+import BeanPage from './components/beans/BeanPage';
+import Details from './components/procucts/Details';
+import { ProductContext } from './context/ProductContext';
+import { useContext } from 'react';
 
 function App() {
-  const logo = process.env.PUBLIC_URL + '/assets/hat-logo.png'
+  const { selectedProduct } = useContext(ProductContext);
 
   return (
     <div className="App">
-      <navbar>
-        <section className='logo'>
-          <Link to="/"><img className="hat-logo" alt='Cut all logo' src={logo} /></Link>
-        </section>
-        <nav>
-          <Link className='link' to='/'>Home</Link>
-          <Link className='link' to='/about'>About</Link>
-          {/* <Link className='link' to='/products'>Products</Link> */}
-        </nav>
-      </navbar>
-
+      <HamburgerNav />
       <div>
         <Routes>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/about' element={<About/>}></Route>
-          {/* <Route path='/products' element={<Products/>}></Route> */}
+          <Route path='/about' element={<About />}></Route>
+          <Route path='/merchPage' element={<MerchPage />}></Route>
+          <Route path='/beanPage' element={<BeanPage />}></Route>
+          <Route path="/details" element={selectedProduct === null ? <Home /> : <Details />} />
         </Routes>
       </div>
-
-      <footer>
-        this is a footer 
-      </footer>
+      <Footer />
     </div>
   );
 }
