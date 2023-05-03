@@ -1,11 +1,11 @@
 import './App.css';
-import Home from './components/home/Home.js';
+import Home from './components/Home.js';
 import About from './components/About/About';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer.js';
-import MerchPage from './components/merch/MerchPage';
+import MerchPage from './components/MerchPage';
 import HamburgerNav from './components/navbars/HamburgerNav';
-import BeanPage from './components/beans/BeanPage';
+import BeanPage from './components/BeanPage';
 import Details from './components/procucts/Details';
 import { ProductContext } from './context/ProductContext';
 import { useContext } from 'react';
